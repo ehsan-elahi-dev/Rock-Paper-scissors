@@ -1,0 +1,49 @@
+@import "tailwindcss";
+@keyframes quick-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(1.15);
+  }
+}
+
+.quick-pulse {
+  animation: quick-pulse 0.5s ease-in-out infinite;
+}
+
+.choice:active {
+  transform: scale(0.92);
+}
+
+@keyframes result-pop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.result-pop {
+  animation: result-pop 0.3s ease-out;
+}
+
+.result-win {
+  color: #4ade80;
+}
+
+.result-lose {
+  color: #f87171;
+}
+
+.result-draw {
+  color: #facc15;
+}
