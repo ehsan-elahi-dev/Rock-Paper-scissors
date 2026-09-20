@@ -1,4 +1,7 @@
 import "./style.css";
+import rockIcon from "./icons/rock.svg";
+import paperIcon from "./icons/paper.svg";
+import scissorsIcon from "./icons/scissors.svg";
 
 const response = await fetch("https://jsonplaceholder.typicode.com/users");
 const data = await response.json();
@@ -14,9 +17,9 @@ const computerScoreElement = document.querySelector("#computer-score");
 const options = ["rock", "paper", "scissors"];
 
 const icons = {
-  rock: "/src/assets/rock.svg",
-  paper: "/src/assets/paper.svg",
-  scissors: "/src/assets/scissors.svg",
+  rock: rockIcon,
+  paper: paperIcon,
+  scissors: scissorsIcon,
 };
 
 let playerScore = 0;
@@ -63,7 +66,9 @@ choices.forEach((choice) => {
       />
     `;
 
-    computerChoiceElement.innerHTML = `<span class="quick-pulse">❔</span>`;
+    computerChoiceElement.innerHTML = `
+      <span class="quick-pulse">❔</span>
+    `;
 
     setTimeout(() => {
       const randomIndex = Math.floor(Math.random() * options.length);
