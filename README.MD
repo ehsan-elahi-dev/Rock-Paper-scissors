@@ -8,7 +8,7 @@ A modern and responsive Rock Paper Scissors game built with **JavaScript**, **Ta
 
 ## 🚀 Live Demo
 
-🔗 **[View Live Demo](https://ehsanellahi1385-commits.github.io/Rock-Paper-scissors/)**
+🔗 **[View Live Demo](https://ehsanellahi1385-dev.github.io/Rock-Paper-scissors/)**
 
 ## ✨ Features
 
